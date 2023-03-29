@@ -1,0 +1,146 @@
+$panel: #71BCEA;
+$green: #52EB7C;
+$red: #FB796A;
+$eror-red: #E64754;
+
+
+
+body{
+  font-family: sans-serif;
+}
+
+.comment-panel{
+  position: relative;
+  width: 1000px;
+  height: 280px;
+  background: $panel;
+  margin: 5px auto;
+ .add{
+    font-size: 22px;
+    position: relative;
+    top: -40px;
+    left: 52px;
+    font-weight: bold;
+    color: #050505;
+  }
+ .not-value{
+   position: absolute;
+   color: $eror-red;
+   top: 60px; 
+   left: 600px;
+   display: none;
+  }
+  #user-print{
+  position: relative;
+  margin: -90px 300px;
+  opacity: 0;
+  color: #000000;
+  }
+}
+.comment-text{
+  font-family: arial;
+  position: relative;
+  resize: none;
+  border: none;
+  margin: -40px 50px;
+  width: 900px;
+  height: 100px;
+  padding-left: 10px;
+}
+.adress{
+  padding-left: 10px;
+  border: none;
+  position: relative;
+  margin: 50px -149px;
+  width: 500px;
+  height: 30px;
+}
+.send{
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin: 50px 50px;
+  border: none;
+  background: $green;
+  color: #FFFFFF;
+}
+.comment-list{
+  margin-top: -15px;
+  a{
+    text-decoration: none;
+  }
+  ul{
+  list-style: none;
+  margin-left: -40px;
+  }
+}
+
+.comment{
+  display: flex;
+  border-left: 10px solid black;
+  background: $panel;
+  margin: 1px auto;
+  padding-left: 0px;
+  padding-top: 25px;
+  width: 990px;
+  min-height: 150px; 
+  max-height: 100%;
+  animation: comment 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  
+  .user-commment{
+    margin-top: 6px;
+    margin-left: -125px;
+    width: 760px;
+    background: #FFFFFF;
+    padding: 5px 5px;
+  }
+  .user-mail{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -18px;
+    left: -105px;
+    cursor: pointer;
+    }
+  .user-avatar{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px;
+    top: -10px;
+  }
+  .date{
+    position: relative;
+    height: 20px;
+    width: 105px;
+    top: 100px;
+    left: -105px;
+    font-size: 10px;
+    color: #252525;
+  }
+}
+.delete{
+  float: right;
+  position: relative;
+  width: 100px;
+  height: 25px;
+  border: none;
+  background: $red;
+  left: 0px;
+  top: -25px;
+  color: #FFFFFF;
+}
+
+@keyframes comment {
+    0% { transform:skewY(2deg); margin-top: 16px;}
+    50% { transform:skewY(-1deg); margin-top: 25px;}
+    100% { transform:skewY(0deg); margin-top: 16px;}
+}
+
+
+
+
+
+
